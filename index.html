@@ -10,7 +10,7 @@
         margin: 0;
         padding: 0;
         background-color: black;
-        color: #ddd;
+        color:white;
     }
     .container {
         width: 90%;
@@ -34,39 +34,45 @@
         padding: 0;
         text-align: center;   
     }
-    
     header nav ul li {
         display: inline;
         margin: 0 1rem;
         background-color: black;
     }
-    
     header nav ul li a {
         color:rgb(240, 240, 246);
         text-decoration: none;
         font-size: xx-large;
+        text-shadow:  2px 2px 5px red;
         /* background-color: black; */
     }
     main {
         padding: 2rem 0;
     }
-    
     main h2 {
         /* text-align: center; */
         margin-bottom: 2rem;
     }
-    
     .product-grid {
         display: flex;
         flex-wrap: wrap;
         gap: 2rem;
         justify-content: center;
     }
-    .bannnerstop{
+    .banners{
         display: flex;
+        flex-wrap: wrap;
+        /* border: 1px solid white; */
+        height: 200%;
+        justify-content: center;
+        background-image: linear-gradient(red,black);
+        /* opacity: 0.8; */
+        /* transform: translate(); */
+        /* drop */
     }
+  
     .product-item {
-        border: 1px solid #ddd;
+        /* border: 1px solid #ddd; */
         padding: 1rem;
         text-align: center;
         width: calc(33.333% - 2rem);
@@ -78,22 +84,8 @@
     .product-item img {
         max-width: 100%;
         height: auto;
+        filter: drop-shadow(1px 1px 20px orange);
     }
-    .album{
-        /* display: flex;
-        flex-wrap: wrap; */
-        border: 1px solid white;
-        padding: 1rem;
-        text-align: center;
-        background-image: linear-gradient(red,black);
-        opacity:0.5 ;
-        /* animation-name: album;
-        animation-duration:10s; */
-    }
-
-.album:hover {
-  opacity: 1;
-}
     .explore{
         display: flex;
     }
@@ -101,19 +93,25 @@
         display: flex;
         flex-wrap: wrap;
         text-align: center;
+        /* width: 33%; */
+       /* height: auto; */
+       /* width:100%; */
+       /* gap: 1rem;
+       padding: 1rem;
+         */
     }
     .socialmedia{
         text-align: center;
         display: flex;
-        flex-wrap: wrap;
+        flex-wrap: wrap !important;
         align-items: center;
+        /* max-width: 100%; */
     }
     .tank{
         display: flex;
         flex-wrap: wrap;
         padding: 20px;
     }
-
     footer {
         background-image: linear-gradient(red,black);
         color: white;
@@ -147,39 +145,79 @@
     <header>
         <div class="container">
             <!-- <h1>Hexashop</h1> -->
-            <img src="./logo.png">
+            <img src="./logo.png" style="width: 30%;">
             <nav>
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Men's</a></li>
                     <li><a href="#">Women's</a></li>
-                    <li><a href="#">Explore</a></li>
-                    <li><a href="#">Page's</a></li>
+                    <li><a href="#">Exge's</a></li>
                     <li><a href="#">Feature's</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-
     <main>
         <div class="container">
-                <div class=" album">
-                 <marquee><h1 style="color: black;">Sale On This Flat[30-40%]</h1></marquee>
-                <img src="./baner-right-image-01.jpg">
-                <img src="./baner-right-image-02.jpg">
-                <img src="./baner-right-image-03.jpg">
-                <img src="./baner-right-image-04.jpg">
+            <div class="slider">
+            </div>
+          <marquee><h1 style="text-shadow: 2px 2px 5px red;" >Sale On Below Categories Flat 60% [Get Now]Only On Hexa..!]</h1></marquee>
+            <div class="banners">
+            <div class="product-grid">
+                <div class="product-item">
+                    <img src="./baner-right-image-01.jpg" alt="Product 1">
+                    <h3 style="text-shadow: 2px 2px 5px red;">Women's</h3>
+                    <!-- <p>$19.99</p> -->
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                </div>
+            
+            <!-- <div class="product-grid"> -->
+                <div class="product-item">
+                    <img src="./baner-right-image-02.jpg" alt="Product 1">
+                    <h3 style="text-shadow: 2px 2px 5px red;">Men's</h3>
+                    <!-- <p>$19.99</p> -->
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
                 </div>
             </div>
-              <!-- Men's-->
-            <h2>Men's Latest</h2>
-            <p>Details to details is what makes Hexashop different from the other themes.
+            <div class="product-grid">
+                <div class="product-item">
+                    <img src="./baner-right-image-03.jpg" alt="Product 1">
+                    <h3 style="text-shadow: 2px 2px 5px red;">Kid's</h3>
+                    <!-- <p>$19.99</p> -->
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                </div>
+                <div class="product-item">
+                    <img src="./baner-right-image-04.jpg" alt="Product 1">
+                    <h3 style="text-shadow: 2px 2px 5px red;">Accessories</h3>
+                    <!-- <p>$19.99</p> -->
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                </div>
+            </div>
+            </div>
+            <h2 style="text-shadow: 2px 2px 25px red;">Men's Latest</h2>
+            <p style="text-shadow: 2px 2px 5px red;">Details to details is what makes Hexashop different from the other themes.
             </p>
             <div class="product-grid">
                 <div class="product-item">
                     <img src="./men-01.jpg" alt="Product 1">
-                    <h3>Classic Spring</h3>
-                    <p>$19.99</p>
+                    <h3 style="text-shadow: 2px 2px 5px red;">Classic Spring</h3>
+                    <p style="text-shadow: 2px 2px 5px red;">$19.99</p>
                     <ion-icon name="star-outline"></ion-icon>
                     <ion-icon name="star-outline"></ion-icon>
                     <ion-icon name="star-outline"></ion-icon>
@@ -188,8 +226,8 @@
                 </div>
                 <div class="product-item">
                     <img src="./men-02.jpg" alt="Product 2">
-                    <h3>Air Force1X</h3>
-                    <p>$29.99</p>
+                    <h3 style="text-shadow: 2px 2px 5px red;">Air Force1X</h3>
+                    <p style="text-shadow: 2px 2px 5px red;">$29.99</p>
                     <ion-icon name="star-outline"></ion-icon>
                     <ion-icon name="star-outline"></ion-icon>
                     <ion-icon name="star-outline"></ion-icon>
@@ -198,8 +236,8 @@
                 </div>
                 <div class="product-item">
                     <img src="./men-03.jpg" alt="Product 3">
-                    <h3>Love Nana'20</h3>
-                    <p>$39.99</p>
+                    <h3 style="text-shadow: 2px 2px 5px red;">Love Nana'20</h3>
+                    <p style="text-shadow: 2px 2px 5px red;">$39.99</p>
                     <ion-icon name="star-outline"></ion-icon>
                     <ion-icon name="star-outline"></ion-icon>
                     <ion-icon name="star-outline"></ion-icon>
@@ -208,14 +246,14 @@
                 </div>
                 <!-- Women's -->
                 <div class="container">
-                    <h2>Women's Latest</h2>
+                    <h2 style="text-shadow: 2px 2px 25px red ;">Women's Latest</h2>
                     <p>Details to details is what makes Hexashop different from the other themes.
                     </p>
                     <div class="product-grid">
                         <div class="product-item">
                             <img src="./women-01.jpg" alt="Product 1">
-                            <h3>New Green Jacket</h3>
-                            <p>$19.99</p>
+                            <h3 style="text-shadow: 2px 2px 5px red;">New Green Jacket</h3>
+                            <p style="text-shadow: 2px 2px 5px red;">$19.99</p>
                             <ion-icon name="star-outline"></ion-icon>
                              <ion-icon name="star-outline"></ion-icon>
                             <ion-icon name="star-outline"></ion-icon>
@@ -224,8 +262,8 @@
                         </div>
                         <div class="product-item">
                             <img src="./women-02.jpg" alt="Product 2">
-                            <h3>Classic Dress</h3>
-                            <p>$29.99</p>
+                            <h3 style="text-shadow: 2px 2px 5px red;">Classic Dress</h3>
+                            <p style="text-shadow: 2px 2px 5px red;">$29.99</p>
                             <ion-icon name="star-outline"></ion-icon>
                             <ion-icon name="star-outline"></ion-icon>
                             <ion-icon name="star-outline"></ion-icon>
@@ -234,8 +272,8 @@
                         </div>
                         <div class="product-item">
                             <img src="./women-03.jpg" alt="Product 3">
-                            <h3>Spring Collection</h3>
-                            <p>$39.99</p>
+                            <h3 style="text-shadow: 2px 2px 5px red;">Spring Collection</h3>
+                            <p style="text-shadow: 2px 2px 5px red;">$39.99</p>
                             <ion-icon name="star-outline"></ion-icon>
                             <ion-icon name="star-outline"></ion-icon>
                             <ion-icon name="star-outline"></ion-icon>
@@ -244,14 +282,14 @@
                         </div>
                           <!-- Kid's-->
                         <div class="container">
-                            <h2>kid's Latest</h2>
-                            <p>Details to details is what makes Hexashop different from the other themes.
+                            <h2 style="text-shadow: 2px 2px 25px red;">kid's Latest</h2>
+                            <p style="text-shadow: 2px 2px 5px red;">Details to details is what makes Hexashop different from the other themes.
                             </p>
                             <div class="product-grid">
                                 <div class="product-item">
                                     <img src="./kid-01.jpg" alt="Product 1">
-                                    <h3>School Collection</h3>
-                                    <p>$19.99</p>
+                                    <h3 style="text-shadow: 2px 2px 5px red;">School Collection</h3>
+                                    <p style="text-shadow: 2px 2px 5px red;">$19.99</p>
                                     <ion-icon name="star-outline"></ion-icon>
                                     <ion-icon name="star-outline"></ion-icon>
                                     <ion-icon name="star-outline"></ion-icon>
@@ -260,8 +298,8 @@
                                 </div>
                                 <div class="product-item">
                                     <img src="./kid-02.jpg" alt="Product 2">
-                                    <h3>Summer Cap</h3>
-                                    <p>$29.99</p>
+                                    <h3 style="text-shadow: 2px 2px 5px red;">Summer Cap</h3>
+                                    <p style="text-shadow: 2px 2px 5px red;">$29.99</p>
                                     <ion-icon name="star-outline"></ion-icon>
                                     <ion-icon name="star-outline"></ion-icon>
                                     <ion-icon name="star-outline"></ion-icon>
@@ -270,8 +308,8 @@
                                 </div>
                                 <div class="product-item">
                                     <img src="./kid-03.jpg" alt="Product 3">
-                                    <h3>Classic Kid</h3>
-                                    <p>$39.99</p>
+                                    <h3 style="text-shadow: 2px 2px 5px red;">Classic Kid</h3>
+                                    <p style="text-shadow: 2px 2px 5px red;">$39.99</p>
                                     <ion-icon name="star-outline"></ion-icon>
                                     <ion-icon name="star-outline"></ion-icon>
                                     <ion-icon name="star-outline"></ion-icon>
@@ -282,20 +320,21 @@
             </div>
             <div class="explore">
                 <div>
-                    <h2>Explore Our Products</h2><hr>
-                    <p>You are allowed to use this HexaShop HTML CSS template. You can feel free to modify or edit this layout. You can convert this template as any kind of ecommerce CMS theme as you wish.</p>
+                    <h2 style="text-shadow: 2px 2px 5px red;">Explore Our Products</h2><hr>
+                    <p style="text-shadow: 2px 2px 5px red;">You are allowed to use this HexaShop HTML CSS template. You can feel free to modify or edit this layout. You can convert this template as any kind of ecommerce CMS theme as you wish.</p>
                     [You are not allowed to redistribute this template ZIP file on any other website.]
                     <p>If this template is beneficial for your website or business, please kindly support us a little via PayPal. Please also tell your friends about our great website. Thank you.</p>
                     <button style="background-color:red;">Discover More</button>
                 </div>
             </div>
             <div class="product-grid">
+                
                 <div class="product-item">
-                    <img src="./explore-image-01.jpg">
+                    <h2 style="text-shadow: 2px 2px 5px red;">Leather Bag</h2>
+                    <p style="text-shadow: 2px 2px 5px red;">Latest Collection</p>
                 </div>
                 <div class="product-item">
-                    <h2>Leather Bag</h2>
-                    <p>Latest Collection</p>
+                    <img src="./explore-image-01.jpg">
                 </div>
             </div>
             <div class="product-grid" style="margin-top: 20px;">
@@ -303,27 +342,27 @@
                     <img src="./explore-image-02.jpg">
                 </div>
                 <div class="product-item" style="margin-top: 2px;">
-                    <h2>Different Types</h2>
-                    <p>Over 304 Products</p>
+                    <h2 style="text-shadow: 2px 2px 5px red;">Different Types</h2>
+                    <p style="text-shadow: 2px 2px 5px red;">Over 304 Products</p>
                 </div>
             </div>
             <div class="social media">
-                <h2>Social Media</h2><hr>
-                <p>Details to details is what makes Hexashop different from the other themes.</p>
+                <h2 style="text-shadow: 2px 2px 25px red;">Social Media</h2><hr>
+                <p style="text-shadow: 2px 2px 25px red;">Details to details is what makes Hexashop different from the other themes.</p>
             </div>
             <div class="sm">
-            <img src="./instagram-01.jpg">
-            <img src="./instagram-02.jpg">
-            <img src="./instagram-03.jpg">
-            </div>
-            <div class="sm">
-            <img src="./instagram-04.jpg">
-            <img src="./instagram-05.jpg">
-            <img src="./instagram-06.jpg">
+            <img src="./instagram-01.jpg" width="33%">
+            <img src="./instagram-02.jpg" width="33%">
+            <img src="./instagram-03.jpg" width="33%">
+            <!-- </div> -->
+            <!-- <div class="sm"> -->
+            <img src="./instagram-04.jpg" width="33%">
+            <img src="./instagram-05.jpg" width="33%">
+            <img src="./instagram-06.jpg" width="33%">
             </div>
             <div>
-                <h2>By Subscribing To Our Newsletter You Can Get 30% Off</h2>
-                <p>Details to details is what makes Hexashop different from the other themes.</p>
+                <h2 style="text-shadow: 2px 2px 25px red;">By Subscribing To Our Newsletter You Can Get 30% Off</h2>
+                <p style="text-shadow: 2px 2px 25px red;">Details to details is what makes Hexashop different from the other themes.</p>
                 <form>
                     <label for="Your Name"></label>
                     <input type="text" id="Your Name" placeholder="Your Name" style="background-color: red; color:white;">
@@ -344,7 +383,7 @@
             <img src="./logo.png">
         </div>
         <div class="container">
-            <p>&copy; 2024 Hexashop. All rights reserved.</p>
+            <p style="text-shadow: 2px 2px 5px red;">&copy; 2024 Hexashop. All rights reserved.</p>
             <ion-icon style="font-size:xx-large;" name="logo-facebook"></ion-icon>
             <ion-icon style="font-size:xx-large;" name="logo-instagram"></ion-icon>
             <ion-icon style="font-size:xx-large;" name="logo-google"></ion-icon>
